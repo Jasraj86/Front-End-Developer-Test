@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Frontend Developer Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="loadData()">
+    <!--Header of the page -->
+    <div class="container">
+        <div class="header">
+            <div id="loginDiv">
+
+                <input type="text" id="username" class="user-pass" placeholder="Username" required>
+                <span><input type="password" id="password" class="user-pass" placeholder="Password" required></span>
+                <span> <button  class="l-btn" onclick="login()">Login</button></span>
+            </div>
+            <div id="search-div">
+                <h1>Property Listing</h1>
+
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+        </div>
+        <!--Body of the page -->
+        <div class="content-div">
+            <!--Sidebar of the page -->
+            <div class="side-bar">
+
+                <div class="filter">
+                    <!--Price filter -->
+                    <div id="price-range">
+                        <input type="range" name="price" id="price" min="700" class="slider" max="2000" value="700" step="10">
+                        <div id="priceVal" class="slider-val"></div>
+                    </div>
+                    <!--sqm filter -->
+                    <div id="squareMeters">
+                        <input type="range" name="sqm" id="sqm" min="70" class="slider" max="400" value="70" step="10">
+                        <div id="sqmVal" class="slider-val"></div>
+                    </div>
+                    <!--Seat selection filter -->
+                    <div id="seats">
+                        <select name="" id="seat-selection">
+                                <option value="">Select seats</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-btn">
+                    <button class="fbtn" onclick="filterResults()">Update Results</button>
+                </div>
+                <div class="filter-btn">
+                    <button class="fbtn" onclick="clearResults()">Clear Results</button>
+                </div>
+            </div>
+            <!--Property Listing of the page -->
+            <div id="btnContainer">
+                <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
+                <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+            </div>
+            <div class="match-div">
+                <div id="match">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
