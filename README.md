@@ -37,3 +37,8 @@ IDE Used
 Output Snapshots:
 
 - Output snapshots are attached to indicate what to expect.
+
+Updates:
+
+- Refer version 2 zip folder for the updation
+   - Call to action button to view properties 
