@@ -109,7 +109,7 @@ const propertyDisplayHTML = property => {
                 <li> <b>Seats:</b> ${property.seats}</li>
                 <li> <b>Square meters:</b> ${property.sqm}</li>
                 </ul>
-                <p></p>
+                <div class="action-btn"><a href="#" id="abtn"> View Property</a> </div>
               </div>
             </div>
           </div>
@@ -176,6 +176,7 @@ const propertyDisplayHTMLListView = property => {
                 <li> <b>Seats:</b> ${property.seats}</li>
                 <li> <b>Square meters:</b> ${property.sqm}</li>
                 </ul>
+                <div class="action-btn"><a href="#" id="abtn"> View Property</a> </div>
               </div>
               <div class="fav-property"><img id="fav" src="../images/heart.png" onclick="favItem()" title="Add to favourite list"></div>
           </div>
