@@ -296,8 +296,38 @@ h1 {
     text-align: right;
 }
 
+#fav {
+    cursor: pointer;
+}
 
-/* Button styling */
+.action-btn {
+    border: solid 2px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    margin-left: 20px;
+    padding-top: 15px;
+    border-color: rgb(215, 58, 57);
+    transition: all 0.5s ease-in-out;
+}
+
+.action-btn a {
+    text-decoration: none;
+    color: #0e0f0f;
+}
+
+.action-btn:hover {
+    background: rgb(215, 58, 57, 0.6);
+}
+
+.action-btn:hover a {
+    color: #fff;
+}
+
+
+/*Grid/List View Button styling */
 
 #btnContainer {
     float: right;
